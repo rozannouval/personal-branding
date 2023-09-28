@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+  }
+  
+  .container {
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+  }
+  
+  .bg {
+      position: absolute;
+      z-index: -3;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 40px;
+    border-bottom: 3px solid rgb(0, 30, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    backdrop-filter: blur(5px);
+  }
+  
+  .navbar{
+      background-image: linear-gradient(
+          to right,
+      rgba(0, 0, 0, 0.507) 0%,
+      rgba(2, 8, 121, 0.448) 100%
+      );
+      transition: 0.3s;
+      background-size: 200% auto;
+  }
+  .navbar:hover {
+    background-position: right center;
+  }
+  
+  .nama {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .nama h2 {
+    color: white;
+    position: absolute;
+    transform: translate(50%, 0%);
+    font-size: 36px;
+  }
+  
+  .nama h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 1px #03a9f4;
+  }
+  
+  .nama h2:nth-child(2) {
+    color: #03a9f4;
+    animation: water 4s ease-in-out infinite;
+  }
+  
+  @keyframes water {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+  
+  .navbar-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 50px; */
+    width: 35rem;
+    padding: 10px;
+  }
+  
+  .navbar-link a {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    transition: all 0.5s ease-in-out;
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  
+  .navbar-link a:hover {
+    color: #00fff2;
+    /* background: rgba(255, 255, 255, 0.149); */
+  }
+  .navbar-link .active {
+    color: #00fff2;
+  }
+  
+  
+  /* MAIN  */
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .main-left {
+      /* margin-top: 7rem;
+      margin-left: 2rem; */
+      padding: 50px 60px 10px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.599);
+      width: 30rem;
+      backdrop-filter: blur(20px);
+      border: 2px solid rgb(0, 13, 255);
+      border-radius: 30px 0px;
+      line-height: 4rem;
+      box-shadow: 15px 15px 10px black;
+  }
+  .main-left h1 {
+    font-size: 50px;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+  }
+  
+  .main-left .auto-input {
+      font-size: 30px;
+      font-weight: 900;
+  }
+  .h1-span {
+    padding-bottom: 20px;
+  }
+  
+  .button-main {
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .button-main a{
+      background-image: linear-gradient(
+          to right,
+          #0a00c3 0%,
+      rgb(255, 0, 255) 51%,
+          #4000ff 100%
+      );
+      margin: 10px;
+      padding: 20px 110px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.3s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0px 10px #b3b3b3;
+      border-radius: 15px 0px;
+    text-decoration: none;
+    border: 2px solid black;
+  }
+  .button-main a:hover {
+    background-position: right center;
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .main-right img{
+    width: 25rem;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+   .foto-profile {
+    padding: 30px;
+    background-color: rgba(0, 217, 255, 0.604);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px solid black;
+   }
+  
+   .foto-profile span:nth-child(1) {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(157, 0, 255, 0.904);
+    backdrop-filter: blur(30px);
+    transform: rotate(45deg);
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    animation: animate 7s infinite;
+   }
+   .foto-profile span:nth-child(2) {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(157, 0, 255, 0.904);
+    backdrop-filter: blur(30px);
+    transform: rotate(72deg);
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    animation: animate2 7s infinite;
+   }
+   .foto-profile span:nth-child(3) {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(157, 0, 255, 0.904);
+    backdrop-filter: blur(30px);
+    transform: rotate(85deg);
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    animation: animate3 7s infinite;
+   }
+   .foto-profile span:nth-child(4) {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    background-color: rgba(157, 0, 255, 0.904);
+    backdrop-filter: blur(30px);
+    transform: rotate(105deg);
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    animation: animate4 7s infinite;
+   }
+   @keyframes animate {
+    0%, 100% {
+      transform: rotate(0deg) scale(.5);
+    }
+    30%, 70% {
+      transform: rotate(45deg);
+    }
+   }
+  
+   @keyframes animate2 {
+    0%, 100% {
+      transform: rotate(0deg) scale(.5);
+    }
+    30%, 70% {
+      transform: rotate(72deg);
+    }
+   }
+  
+   @keyframes animate3 {
+    0%, 100% {
+      transform: rotate(0deg) scale(.5);
+    }
+    30%, 70% {
+      transform: rotate(85deg);
+    }
+   }
+   @keyframes animate4 {
+    0%, 100% {
+      transform: rotate(0deg) scale(.5);
+    }
+    30%, 70% {
+      transform: rotate(105deg);
+    }
+   }
