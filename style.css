@@ -294,3 +294,35 @@
       transform: rotate(105deg);
     }
    }
+
+   @media screen and (max-width: 768px) {
+    /* Aturan CSS untuk tampilan mobile di sini */
+    .navbar {
+      padding: 10px 20px; /* Mengurangi padding di navbar */
+    }
+  
+    .navbar-link {
+      width: 100%; /* Mengubah lebar navbar-link menjadi 100% */
+      flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+      align-items: flex-start; /* Menggeser teks ke kiri */
+      padding-left: 20px; /* Padding kiri untuk menu mobile */
+    }
+  
+    .main-container {
+      flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+      align-items: center; /* Menggeser konten ke tengah */
+    }
+  
+    .main-left {
+      width: 100%; /* Mengubah lebar .main-left menjadi 100% */
+    }
+  
+    .button-main a {
+      padding: 15px 30px; /* Menyesuaikan padding tombol */
+    }
+    
+    .main-right img {
+      width: 100%; /* Mengubah lebar gambar menjadi 100% */
+    }
+  }
+  
